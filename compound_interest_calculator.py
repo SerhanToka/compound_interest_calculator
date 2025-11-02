@@ -10,19 +10,16 @@ while amount <= 0:
     amount = float(input("Enter the principle amount: "))
     if amount <= 0:
         print("The amount can't be less than or equal to zero!")
-        break
 
 while rate <= 0:
     rate = float(input("Enter the interest rate: "))
     if rate <= 0:
         print("The rate can't be less than or equal to zero!")
-        break
 
 while time <= 0:
     time = int(input("Enter the time in year/s: "))
     if time <= 0:
         print("The time can't be less than or equal to zero!")
-        break
 
 total = amount * pow((1 + rate / 100), time) # A = P(1 + r/n) ** t
 
